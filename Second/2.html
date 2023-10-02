@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generování čáry</title>
+    <script>
+        function generateLine() {
+            const length = parseInt(prompt("Jak dlouhou čáru chceš vykreslit?"));
+            const line = '.'.repeat(length);
+            document.getElementById('line').innerText = line;
+        }
+    </script>
+</head>
+<body>
+    <h1>Generování čáry</h1>
+    <button onclick="generateLine()">Generovat čáru</button>
+    <p id="line"></p>
+</body>
+</html>

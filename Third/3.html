@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Převod do dvojkové soustavy</title>
+    <script>
+        function decimalToBinary() {
+            const number = parseInt(prompt("Zadej číslo:"));
+            const binary = number.toString(2);
+            document.getElementById('binary').innerText = binary;
+        }
+    </script>
+</head>
+<body>
+    <h1>Převod do dvojkové soustavy</h1>
+    <button onclick="decimalToBinary()">Převést do dvojkové soustavy</button>
+    <p id="binary"></p>
+</body>
+</html>
